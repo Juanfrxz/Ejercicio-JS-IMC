@@ -13,6 +13,24 @@ function calcularIMC() {
     const imc = (peso / (altura * altura)).toFixed(2);
     resultado.textContent = `Tu IMC es ${imc}.`;
   
+    // switch (imc){
+    //   case imc < 18.5:
+    //     resultado.textContent += " Estás en la categoría de bajo peso.";
+    //     imagen.src = "../images/bajo peso.jpg";
+    //     break
+    //   case imc >= 18.5 && imc < 24.9:
+    //     resultado.textContent += " Estás en la categoría de peso normal.";
+    //     imagen.src = "../images/peso normal.jpg";
+    //     break
+    //   case imc >= 25 && imc < 29.9:
+    //     resultado.textContent += " Estás en la categoría de sobrepeso.";
+    //     imagen.src = "../images/sobre peso.jpg"; 
+    //     break
+    //   default:
+    //     resultado.textContent += " Estás en la categoría de sobrepeso.";
+    //     imagen.src = "../images/obesidad.jpg"; 
+    // }
+
     if (imc < 18.5) {
       resultado.textContent += " Estás en la categoría de bajo peso.";
       imagen.src = "../images/bajo peso.jpg"; 
@@ -29,4 +47,5 @@ function calcularIMC() {
   
     imagen.style.display = "block";
   }
+  
   
